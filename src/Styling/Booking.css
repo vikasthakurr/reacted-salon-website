@@ -1,0 +1,43 @@
+h1{
+   text-align: center;
+   padding:30px;
+   
+}
+.Booking {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 429px;
+  /* margin: 0 auto; */
+  /* border: 1px solid #000; */
+  position: absolute;
+    left: 38%;
+    top: 24%;
+    border-radius: 8px;
+    background-color: #009688;
+}
+
+.Booking label {
+  margin-left: 20px;
+}
+
+.Booking input,
+.Booking select {
+   padding: 10px 60px;
+   margin-bottom: 1rem;
+   margin-top: 8px;
+   border-radius: 4px;
+}
+
+.Booking button[type="submit"] {
+   background-color: #007bff;
+    color: #fff;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.Booking button[type="submit"]:hover {
+  background-color: #0056b3;
+}
