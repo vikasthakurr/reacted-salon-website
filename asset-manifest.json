@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/reacted-salon-website/static/css/main.354f98c6.css",
+    "main.js": "/reacted-salon-website/static/js/main.020b2d17.js",
+    "static/media/banner.jpg": "/reacted-salon-website/static/media/banner.391f08b148510f0c9018.jpg",
+    "static/media/main.png": "/reacted-salon-website/static/media/main.598069cc64d697184304.png",
+    "static/media/barber-man.jpg": "/reacted-salon-website/static/media/barber-man.ac874447cd4f59b19740.jpg",
+    "static/media/pic-3.jpg": "/reacted-salon-website/static/media/pic-3.8091e4334f23734c68d8.jpg",
+    "static/media/pic-1.jpg": "/reacted-salon-website/static/media/pic-1.50cc00e6d6b7dd566750.jpg",
+    "static/media/pic-2.jpg": "/reacted-salon-website/static/media/pic-2.b25f89aa0a080f2b9759.jpg",
+    "static/media/pic-4.jpg": "/reacted-salon-website/static/media/pic-4.9cf0e3096852342cea9e.jpg",
+    "static/media/footer-img.png": "/reacted-salon-website/static/media/footer-img.861909330e87b4b74edc.png",
+    "index.html": "/reacted-salon-website/index.html",
+    "main.354f98c6.css.map": "/reacted-salon-website/static/css/main.354f98c6.css.map",
+    "main.020b2d17.js.map": "/reacted-salon-website/static/js/main.020b2d17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.354f98c6.css",
+    "static/js/main.020b2d17.js"
+  ]
+}
