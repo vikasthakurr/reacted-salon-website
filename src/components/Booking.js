@@ -34,8 +34,8 @@ function Booking() {
    };
 
    return (
-      <div>
-         <h1>Book Your Slot </h1>
+      <div className="box">
+         <h1>Get Your Slot </h1>
          <form className="Booking" onSubmit={handleSubmit}>
             <div>
                <label>Name:</label>

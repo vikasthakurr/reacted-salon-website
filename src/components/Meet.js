@@ -1,38 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../Styling/Meet.css";
-import footer from "../images/footer-img.png"
+import footer from "../images/footer-img.png";
 
 const Meet = () => {
+  const [query, setQuery] = useState(""); // State to store the user's query
+
+  // Function to handle query submission
+  const handleQuerySubmit = async () => {
+    try {
+      // Send query data to backend server for saving in MongoDB Atlas
+      const response = await fetch('http://localhost:4000/app', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ query })
+      });
+      if (response.ok) {
+        console.log('Query saved successfully:', query);
+        // Reset the input field after successful submission
+        setQuery("");
+      } else {
+        console.error('Failed to save query:', query);
+      }
+    } catch (error) {
+      console.error('Failed to save query:', error);
+    }
+  }
+
   return (
     <div id="footer">
-      <img src={footer} className="footer-img"></img>
-        <div className="title-text">
+        <div class="title-text">
           <p>CONTACT</p>
           <h1>Visit Shop Today</h1>
         </div>
-        <div className="footer-row">
-          <div className="footer-left">
+        <div class="footer-row">
+          <div class="footer-left">
             <h1>Opening Hours</h1>
-            <p><i className="far fa-clock"></i> Monday to Friday - 9am to 9pm</p>
-            <p><i className="far fa-clock"></i> Saturday to Sunday - 8am to 11am</p>
+            <p><i class="far fa-clock"></i> Monday to Friday - 9am to 9pm</p>
+            <p><i class="far fa-clock"></i> Saturday to Sunday - 8am to 11am</p>
           </div>
-          <div className="footer-right">
+          {/* <div class="footer-right">
             <h1>Get in Touch</h1>
-            <p>abc colony, abc city IN <i className="fas fa-map-signs"></i></p>
-            <p>abcexample@gmail.com <i className="fas fa-paper-plane"></i></p>
-            <p>+91 9068003323 <i className="fas fa-mobile"></i></p>
-          </div>
+            <p>abc colony, abc city IN <i class="fas fa-map-signs"></i></p>
+            <p>abcexample@gmail.com <i class="fas fa-paper-plane"></i></p>
+            <p>+91 9068003323 <i class="fas fa-mobile"></i></p>
+          </div> */}
         </div>
 
-        <div className="social-links">
-          <i className="fab fa-facebook-f"></i>
-          <i className="fab fa-instagram"></i>
-          <i className="fab fa-twitter"></i>
-          <i className="fab fa-youtube"></i>
-          <i className="fab fa-telegram"></i>
-          <p><i className="far fa-copyright"></i> Made By Vikas thakur for front-End CA</p>
-        </div>
-
+      <div className="query-form">
+        <input
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Enter your query"
+          className="query-input"
+        />
+        <button onClick={handleQuerySubmit} className="submit-btn">Submit Query</button>
+      </div>
     </div>
   )
 }

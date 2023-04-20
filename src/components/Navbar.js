@@ -13,7 +13,7 @@ export default function Nav() {
             <Link to="/service">Service</Link>
             <Link to="/review">Testimonials</Link>
             <Link to="/meet">Meet Us</Link>
-            {/* <Link to="/signup">Signup</Link> */}
+            <Link to="/signup">Signup</Link>
          </ul>
       </div>
    );

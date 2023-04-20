@@ -4,6 +4,7 @@ import photo from "../images/main.png";
 
 const Review = () => {
   return (
+   <div className="main-review">
      <div id="testimonial">
         <div className="title-text">
            <p>TESTIMONIAL</p>
@@ -18,7 +19,7 @@ const Review = () => {
                        <small>@abc</small>
                     </div>
               </div>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic exercitationem omnis eum a ab officiis, quisquam dolorum saepe ratione dolorem tempore! Repudiandae accusantium porro est eaque maiores neque atque maxime?</p>
+                 <p>As someone who recently visited a hair salon, I am thrilled to share my positive experience! From the moment I walked in, I was impressed by the warm and inviting atmosphere. The salon was clean, well-organized, and had a trendy vibe.</p>
            </div>
            <div className="testimonial-col">
               <div className="user">
@@ -28,7 +29,7 @@ const Review = () => {
                        <small>@abcd</small>
                     </div>
               </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti optio esse, numquam at dolorum architecto fuga illum.quisquam dolorum saepe ratione dolorem tempore! Repudiandae accusantium porro est eaque maiores neque atque maxime?</p>
+                 <p>As someone who recently visited a hair salon, I am thrilled to share my positive experience! From the moment I walked in, I was impressed by the warm and inviting atmosphere. The salon was clean, well-organized, and had a trendy vibe.</p>
            </div>
            <div className="testimonial-col">
               <div className="user">
@@ -38,9 +39,10 @@ const Review = () => {
                        <small>@abcde</small>
                     </div>
               </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum sit dolore quia, illo voluptate saepe aliquid quibusdam earum modi similique totam non consectetur et officiis porro ipsum labore cupiditate.</p>
+                 <p>As someone who recently visited a hair salon, I am thrilled to share my positive experience! From the moment I walked in, I was impressed by the warm and inviting atmosphere. The salon was clean, well-organized, and had a trendy vibe.</p>
            </div>
         </div>
+     </div>
      </div>
   )
 }
