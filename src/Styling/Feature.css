@@ -32,7 +32,8 @@
 }
 
 .title-text h1 {
-  font-size: 50px;
+  font-size: 40px;
+  margin-top: 10px;
 }
 
 .feature-box {
@@ -63,6 +64,7 @@
   margin-bottom: 10px;
   font-weight: 100;
   color: #009688;
+  font-size: 27px;
 }
 
 .features-desc {

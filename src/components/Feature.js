@@ -6,7 +6,7 @@ const Feature = () => {
   return (
     <div className="Feature-box">
       <div className="title-text">
-        <p>FEATURES</p>
+        {/* <p>FEATURES</p> */}
         <h1>Why you choose Us</h1>
       </div>
       <div className="feature-box">

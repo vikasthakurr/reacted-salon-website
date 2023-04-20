@@ -10,7 +10,7 @@ const Service = () => {
     return (
         <div className="main-box">
             <div className="title-text">
-                <p>SERVICES</p>
+                {/* <p>SERVICES</p> */}
                 <h1>We Provide Best In Town</h1>
             </div>
             <div className="service-box">
